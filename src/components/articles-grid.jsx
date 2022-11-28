@@ -4,8 +4,8 @@ import ArticleCard from "./article-card"
 const ArticlesGrid = ({ articles }) => {
   return (
     <div className="">
-      {articles.map((article) => (
-        <ArticleCard article={article} />
+      {articles.map((article, index) => (
+        <ArticleCard article={article} key={index} />
       ))}
     </div>
   )
